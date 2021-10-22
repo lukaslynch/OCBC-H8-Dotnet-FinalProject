@@ -1,0 +1,79 @@
+Panduan pengguna singkat padat dan jelas untuk user.
+#created by Lukas Hansel Ganda - FSDO001ONL004
+
+Aplikasi ini sudah diuji pada postman, file screenshot terlampir.
+
+Sebelumnya mari kita pahami bersama, ini adalah daftar path / link beserta body untuk 
+melakukan request kepada server, jangan lupa request body berbentuk json.
+Silahkan buka browser kesayangan anda.
+--------------------------------------------------------------------------------------------
+# Untuk melakukan register.
+https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/Register
+{
+  "username": "string",
+  "email": "user@example.com",
+  "password": "string"
+}
+--------------------------------------------------------------------------------------------
+# Untuk melakukan login.
+https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/login
+{
+  "email": "heroku899@ocbc.com",
+  "password": "Password12345!"
+}
+--------------------------------------------------------------------------------------------
+# Untuk melakukan refresh token. (Validasi dan return masih perlu diperbaiki karena
+jika token dan refresh token di request yang masih aktif hanya akan mereturn 
+"Token belum expired" sedangkan jika token sudah expired akan mereturn "Token has 
+expired please re-login" seharusnya mereturn token baru.)
+
+https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/refreshtoken
+{
+  "token": "string",
+  "refreshToken": "string"
+}
+--------------------------------------------------------------------------------------------
+
+UNTUK SELANJUTNYA SELALU DIPERLUKAN request header berupa authorization bearer berisi 
+token yang didapatkan setelah login, token ini berbatas waktu, jika mendapat response
+"Token sudah expired" silahkan melakukan login ulang.
+
+--------------------------------------------------------------------------------------------
+# Untuk mengambil semua data
+https://finalproject1ocbch8.herokuapp.com/api/paymentdetail ---> GET
+
+--------------------------------------------------------------------------------------------
+# untuk created data ke dalam database
+https://finalproject1ocbch8.herokuapp.com/api/paymentdetail ---> POST
+{
+  "paymentDetailId": 0,
+  "cardOwnerName": "string",
+  "cardNumber": "string",
+  "expirationDate": "string",
+  "securityCode": "string"
+}
+--------------------------------------------------------------------------------------------
+# Untuk ambil data sesuai parameter ID
+https://finalproject1ocbch8.herokuapp.com/api/paymentdetail/{id}  ---> GET By ID
+
+--------------------------------------------------------------------------------------------
+# Untuk update data sesuai parameter ID
+https://finalproject1ocbch8.herokuapp.com/api/paymentdetail/{id}  ---> PUT By ID
+{
+  "paymentDetailId": 0,
+  "cardOwnerName": "string",
+  "cardNumber": "string",
+  "expirationDate": "string",
+  "securityCode": "string"
+}
+--------------------------------------------------------------------------------------------
+# Untuk delete data dengan parameter ID data
+https://finalproject1ocbch8.herokuapp.com/api/paymentdetail/{id}  ---> DELETE By ID
+
+--------------------------------------------------------------------------------------------
+Kami juga telah menyiapkan postman collection (file postman_collection.json terlampir),
+buka postman dan import postman_collection.json klik method yang diinginkan dan ubah
+request body / header sesuai kebutuhan. 
+
+
+

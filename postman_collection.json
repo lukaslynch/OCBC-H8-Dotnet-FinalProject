@@ -1,0 +1,495 @@
+{
+	"info": {
+		"_postman_id": "b571d472-b2a4-4c39-8ddd-dd7141b49786",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Validasi Register email already in use",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"heroku1\",\r\n    \"email\": \"heroku1@example.com\",\r\n    \"password\": \"Password12345!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/Register",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validasi Register email tidak valid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"heroku899\",\r\n    \"email\": \"malesbikinemail\",\r\n    \"password\": \"Password12345!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/Register",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validasi Register password tidak valid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"heroku899\",\r\n    \"email\": \"malesbikinemail@gmail.com\",\r\n    \"password\": \"malesbikinpwd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/Register",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registrasi user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"heroku899\",\r\n    \"email\": \"heroku899@ocbc.com\",\r\n    \"password\": \"Password12345!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/Register",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validasi Login email salah",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"heroku899123123123@ocbc.com\",\r\n    \"password\": \"Password12345!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/login",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validasi Login password salah",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"heroku899@ocbc.com\",\r\n    \"password\": \"Password12345!asd\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/login",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"heroku899@ocbc.com\",\r\n    \"password\": \"Password12345!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/login",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Refresh Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczNzcyOTliLWJmY2MtNGViNS05Zjg0LWE5Njg3NDE0ZjM4YSIsImVtYWlsIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwic3ViIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwianRpIjoiNjZkOGMwOTUtODExZC00ZjgyLWJhYWItZDdkOTU3ZjUyNDYwIiwibmJmIjoxNjM0OTI5ODA0LCJleHAiOjE2MzQ5MzAxMDQsImlhdCI6MTYzNDkyOTgwNH0.umgC516iCbV8NJKEu7A-C3XHqRqh8A1Pxs6XAJVKWX0\",\r\n    \"refreshToken\": \"S17KKFJ4UUGP91T20QGO9A5WJ9S6W3GL4PHfd647197-82aa-4eb7-a49d-d1f1a5f0ed0d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/AuthManagement/refreshtoken",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"AuthManagement",
+						"refreshtoken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Validasi Invalid Token",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczNzcyOTliLWJmY2MtNGViNS05Zjg0LWE5Njg3NDE0ZjM4YSIsImVtYWlsIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwic3ViIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwianRpIjoiNjZkOGMwOTUtODExZC00ZjgyLWJhYWItZDdkOTU3ZjUyNDYwIiwibmJmIjoxNjM0OTI5ODA0LCJleHAiOjE2MzQ5MzAxMDQsImlhdCI6MTYzNDkyOTgwNH0.umgC516iCbV8NJKEu7A-C3XHqRqh8A1Pxs6XAJVKWX0",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/paymentdetail",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"paymentdetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Data Payment Detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczNzcyOTliLWJmY2MtNGViNS05Zjg0LWE5Njg3NDE0ZjM4YSIsImVtYWlsIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwic3ViIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwianRpIjoiODgyMTczZGQtY2Y0NS00YjA2LWJkYWUtYjhkNGM2NWVmYTgxIiwibmJmIjoxNjM0OTMxNzc4LCJleHAiOjE2MzQ5MzIwNzgsImlhdCI6MTYzNDkzMTc3OH0.Y6-gy4Ee_4DxCO9-8zvdU0HJP7-DRjt10mlnkffIgR8",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/paymentdetail",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"paymentdetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Data",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczNzcyOTliLWJmY2MtNGViNS05Zjg0LWE5Njg3NDE0ZjM4YSIsImVtYWlsIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwic3ViIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwianRpIjoiNzQwNDM4NGQtYWVhZS00YzFjLTg3YjEtOTRlMzY1YTE5ZTU0IiwibmJmIjoxNjM0OTMwOTY4LCJleHAiOjE2MzQ5MzEyNjgsImlhdCI6MTYzNDkzMDk2OH0.uMzhyXy-SshCDEGndH2b5hKUWTm7Tw-2eWQ1mTIYhpg",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"cardOwnerName\": \"Karina\",\r\n    \"cardNumber\": \"8755-8755-8755-8755\",\r\n    \"expirationDate\": \"12/23\",\r\n    \"securityCode\": \"879\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/paymentdetail",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"paymentdetail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data by Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczNzcyOTliLWJmY2MtNGViNS05Zjg0LWE5Njg3NDE0ZjM4YSIsImVtYWlsIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwic3ViIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwianRpIjoiNzQwNDM4NGQtYWVhZS00YzFjLTg3YjEtOTRlMzY1YTE5ZTU0IiwibmJmIjoxNjM0OTMwOTY4LCJleHAiOjE2MzQ5MzEyNjgsImlhdCI6MTYzNDkzMDk2OH0.uMzhyXy-SshCDEGndH2b5hKUWTm7Tw-2eWQ1mTIYhpg",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/paymentdetail/3",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"paymentdetail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Data",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczNzcyOTliLWJmY2MtNGViNS05Zjg0LWE5Njg3NDE0ZjM4YSIsImVtYWlsIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwic3ViIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwianRpIjoiZGQ5MWVlMTAtNDcwZC00YTc0LThiOTEtMTEwNDljNThmMDlkIiwibmJmIjoxNjM0OTMxMjExLCJleHAiOjE2MzQ5MzE1MTEsImlhdCI6MTYzNDkzMTIxMX0.nBni0FBMUst5qSJzR8wEBxazz97AcmseuegSZwT_bZ4",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"paymentDetailId\": 3,\r\n    \"cardOwnerName\": \"Karina UPDATED\",\r\n    \"cardNumber\": \"8755-8755-8755-8755 UPDATED\",\r\n    \"expirationDate\": \"12/23 UPDATED\",\r\n    \"securityCode\": \"879 UPDATED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/paymentdetail/3",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"paymentdetail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Data By Id After Update",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczNzcyOTliLWJmY2MtNGViNS05Zjg0LWE5Njg3NDE0ZjM4YSIsImVtYWlsIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwic3ViIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwianRpIjoiNDNiMjVhOWYtY2ViNC00ZTU5LWFhNzktYjk4OTQzY2FlMjc0IiwibmJmIjoxNjM0OTMxMzYyLCJleHAiOjE2MzQ5MzE2NjIsImlhdCI6MTYzNDkzMTM2Mn0.FDIZdDvBfam8ys73H4lf9wF5K2_q8FMHaV1FsLC8qyU",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/paymentdetail/3",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"paymentdetail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Data",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczNzcyOTliLWJmY2MtNGViNS05Zjg0LWE5Njg3NDE0ZjM4YSIsImVtYWlsIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwic3ViIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwianRpIjoiOGQ0NDEyYjEtOWEwNi00MWMzLWJhYjAtYTY0NDE5MWU0NWYxIiwibmJmIjoxNjM0OTMxNDU5LCJleHAiOjE2MzQ5MzE3NTksImlhdCI6MTYzNDkzMTQ1OX0.8qxY8O2Mcb0yaGrWkyJRO6R_WTDiGieHglH_Pkt-t94",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/paymentdetail/3",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"paymentdetail",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Data After Deleted",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjczNzcyOTliLWJmY2MtNGViNS05Zjg0LWE5Njg3NDE0ZjM4YSIsImVtYWlsIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwic3ViIjoiaGVyb2t1ODk5QG9jYmMuY29tIiwianRpIjoiOGQ0NDEyYjEtOWEwNi00MWMzLWJhYjAtYTY0NDE5MWU0NWYxIiwibmJmIjoxNjM0OTMxNDU5LCJleHAiOjE2MzQ5MzE3NTksImlhdCI6MTYzNDkzMTQ1OX0.8qxY8O2Mcb0yaGrWkyJRO6R_WTDiGieHglH_Pkt-t94",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://finalproject1ocbch8.herokuapp.com/api/paymentdetail",
+					"protocol": "https",
+					"host": [
+						"finalproject1ocbch8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"paymentdetail"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,9 +1,25 @@
 Panduan pengguna singkat padat dan jelas untuk user.
 #created by Lukas Hansel Ganda - FSDO001ONL004
 
+Ada 3 cara untuk menggunakan API ini.
+1. Docker + database online remote MySQL
+2. Local + database offline MySQL
+3. Heroku + database online remote MySQL
+# kami menyarankan anda menggunakan no 3 karena mudah dan tidak ribet.
+
+Jika anda memakai nomor 1. silahkan file tempat project berada dan buka solution lalu run 
+docker, container dan images akan otomatis ter-generate, browser default akan otomatis 
+terbuka dan langsung menuju path swagger dengan pemilihan port oleh docker.
+
+Jika anda memakai nomor 2. Jalankan MySQL via XAMPP lalu buka git bash pada lokasi folder
+project, jalankan perintah "dotnet ef database update" lalu jalankan perintah dotnet watch
+run, browser default anda akan terbuka dan langsung menuju path swagger dengan port 5001
+
+Jika anda memakai nomor 3. Buka postman anda, import file postman_collection.json
+klik collection method ayng diinginkan dan ubah request body / header sesuai kebutuhan.
 Aplikasi ini sudah diuji pada postman, file screenshot terlampir.
 
-Sebelumnya mari kita pahami bersama, ini adalah daftar path / link beserta body untuk 
+Ini adalah daftar path / link beserta body untuk 
 melakukan request kepada server, jangan lupa request body berbentuk json.
 Silahkan buka browser kesayangan anda.
 --------------------------------------------------------------------------------------------
@@ -71,9 +87,6 @@ https://finalproject1ocbch8.herokuapp.com/api/paymentdetail/{id}  ---> PUT By ID
 https://finalproject1ocbch8.herokuapp.com/api/paymentdetail/{id}  ---> DELETE By ID
 
 --------------------------------------------------------------------------------------------
-Kami juga telah menyiapkan postman collection (file postman_collection.json terlampir),
-buka postman dan import postman_collection.json klik method yang diinginkan dan ubah
-request body / header sesuai kebutuhan. 
 
 
 
